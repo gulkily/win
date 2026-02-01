@@ -5,6 +5,54 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.5.0](https://github.com/gulkily/win/compare/v0.4.3...v0.5.0) (2026-02-01)
+
+
+### Features
+
+* add bulletin system for dynamic messaging ([a6de824](https://github.com/gulkily/win/commit/a6de8248769198a01584b94d69a56710c5936c94))
+* add tool approval prompts before command execution ([be83d1c](https://github.com/gulkily/win/commit/be83d1c4ce891df5fd10574d61ee8ef428f6e5a1))
+* concurrent multi-panel isolation with per-session state partitioning ([9878537](https://github.com/gulkily/win/commit/98785376a211be96b60cc0ca3ed44fe38b53a7e8))
+* headless cli (-p flag); terminal-bench benchmarking support ([840276c](https://github.com/gulkily/win/commit/840276ce911035a03cad5cdbf1884418728da9c1))
+* launch ([#12](https://github.com/gulkily/win/issues/12)) ([d8125d2](https://github.com/gulkily/win/commit/d8125d2052f7299fc786a21253cab8fde1f0a6e7))
+* **lib:** orjson for faster JSON ([7ed5fe0](https://github.com/gulkily/win/commit/7ed5fe05b184beea2bef4efbfbbfcdc9aa63aa44))
+* MCP modal, model updates, backgrounding fixes, AGENTS.md fixes ([27fb934](https://github.com/gulkily/win/commit/27fb93401c5504face8f7d4e379389c5915da0ff))
+* **memory:** add delete confirmation step ([9ea5fbc](https://github.com/gulkily/win/commit/9ea5fbce23c43fc8a4f91e6ae4cf21736745ca78))
+* **memory:** redesign with JSON structure, ephemeral info ([a931c7d](https://github.com/gulkily/win/commit/a931c7d75430f75023a73c3164771363153e2d04))
+* pass tool outputs to context; remove max_steps limit; escape to cancel generation and clear input; collapse long pastes; update SelectionModal theme ([b8118aa](https://github.com/gulkily/win/commit/b8118aaf63567fcac89b96a79b92257e8cbd671a))
+* segment-based message serialization for stateful UI hydration; multimodal input pipeline with async image caching and platform-specific path normalization; PyPI distribution scaffolding with release-please CI/CD ([19d977a](https://github.com/gulkily/win/commit/19d977ab49bdb569d48a76211094f5bd6fb004cb))
+* tab to autocomplete, mcp remove ([7abf768](https://github.com/gulkily/win/commit/7abf76818fe10d1e71969ed1cbc0da259f60aebb))
+* **tools:** fd/rg file ops, read_file pagination, escape fixes ([63144f9](https://github.com/gulkily/win/commit/63144f9074d2c54f3c1598b88d4551323a3c49c4))
+* **ui:** add command completion ([42c584a](https://github.com/gulkily/win/commit/42c584ace34566c0d7d2417538c4fe81fde8e510))
+* **ui:** add quit hint and /exit ([b4761e8](https://github.com/gulkily/win/commit/b4761e8d7fed047d96a3f220a8f1136501e00606))
+* **ui:** cycle tab completions ([ac4295d](https://github.com/gulkily/win/commit/ac4295dab48ccb814f24b8f559e706980b106b19))
+* **ui:** improve UX with double-tap quit, list scroll, and click-to-focus ([f9ab77c](https://github.com/gulkily/win/commit/f9ab77cd3b1147b5ac466ccdd08729eff28cae80))
+* **ui:** show command output preview in status widgets ([d6cf542](https://github.com/gulkily/win/commit/d6cf542d609155c161a041ae13437831c311d678))
+* **ui:** streaming text via Static.update() with persistent bottom spinner ([942035d](https://github.com/gulkily/win/commit/942035d844cbee9c667631f44be648cfd42349df))
+
+
+### Bug Fixes
+
+* cancel gen behavior; tool approval focus; prefix paste; display on reenter; list / rem mcps ([29f4b92](https://github.com/gulkily/win/commit/29f4b92e3bd182b56e94888c55f59f905a18ed9c))
+* **ci:** wingman/ -&gt; src/wingman/ ([d7bebe1](https://github.com/gulkily/win/commit/d7bebe1819c259b888bce1c9ff2055e3f5ad36f1))
+* filter servers by featured status ([28737d0](https://github.com/gulkily/win/commit/28737d0f66423d87dacab5d280c34a0322ceec0c))
+* filter servers by featured status ([#14](https://github.com/gulkily/win/issues/14)) ([7e468f7](https://github.com/gulkily/win/commit/7e468f79b1fc445de9f34f9002283639fc9352e7))
+* Gemini tool streaming; scrollbar/focus UI styling; image drag-drop; context limits; paste handling ([31ecfb6](https://github.com/gulkily/win/commit/31ecfb69f88fea49f9e04108200c264dfb3fdb2f))
+* **input:** preserve multi-line clipboard content on paste ([ccacd54](https://github.com/gulkily/win/commit/ccacd54c51b4d7d66646590e76b9b8cbbc4b7d9e))
+* remote bulletin fetching logic ([bf621c1](https://github.com/gulkily/win/commit/bf621c19468c0c4311ab332629a559e4956d4d44))
+* remove failed message from history to prevent resending ([158f240](https://github.com/gulkily/win/commit/158f2406e304df01afd9ed721183ce5f4bfa6cd4))
+* remove redundant api key prefix validation ([25e3476](https://github.com/gulkily/win/commit/25e34766d0f02b0a2a0509275c9aa15744bb6943))
+* **ui:** allow q to close modals ([805fd8d](https://github.com/gulkily/win/commit/805fd8d577d253504ab5075c07d9c28eb456961b))
+* **ui:** hide thinking spinner during tool approval ([ebb0a26](https://github.com/gulkily/win/commit/ebb0a26b50dc4ec3a41a33c72192d97bd389194d))
+* **ui:** spacing, edit rejection loop, system prompt updates ([082b853](https://github.com/gulkily/win/commit/082b853b63175730dfe3029efff57e27158ad784))
+* use plain text logo for universal terminal compatibility ([9bbb628](https://github.com/gulkily/win/commit/9bbb62887a718e81027d13197f7d6bf723976945))
+* use timestamp-based widget IDs to prevent collisions ([7419143](https://github.com/gulkily/win/commit/74191430165e65f676685882c54b24bf3ed72ce6))
+
+
+### Documentation
+
+* update commands, remove keyboard shortcuts section ([a647f71](https://github.com/gulkily/win/commit/a647f715ad2bd7031eb9c5c358e06f2f8f504f1f))
+
 ## [0.4.3](https://github.com/dedalus-labs/wingman/compare/v0.4.2...v0.4.3) (2026-01-11)
 
 
